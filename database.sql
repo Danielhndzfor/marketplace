@@ -6,7 +6,7 @@ CREATE TABLE Usuarios (
     UsuarioID INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(255),
     CorreoElectronico VARCHAR(255),
-    Contraseña VARCHAR(255),
+    Contraseña VARCHAR(255)
 );
 
 -- Tabla Productos
