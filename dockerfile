@@ -19,4 +19,4 @@ EXPOSE 80
 
 
 #Iniciar el servidor de node
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
