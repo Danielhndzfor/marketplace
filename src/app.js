@@ -27,7 +27,7 @@ app.get('/ventas',ventas_Controller.indexGet);
 app.get('/', function(req, res) {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Holaaaa Mundo');
+    res.end('Hola Mundo');
 });
 
 app.listen(port, '0.0.0.0', function() {
