@@ -1,8 +1,9 @@
-const db= require('../dbconnection');
+const { connectToMysql } = require('../dbconnection');
 
 class productos_Model{
     static async consultar(){
-        let query =db("Productos");
+        let db = await connectToMysql();
+        let query = db("Productos");
         return await query;
     }
 }

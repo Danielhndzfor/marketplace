@@ -5,6 +5,11 @@ const port = 80;
 const usuarios_Controller=require('./controllers/usuariosController');
 app.use(express.json())
 app.get('/usuarios',usuarios_Controller.indexGet);
+app.get('/usuarios/:id([0-9]+)',usuarios_Controller.itemGet);
+app.post('/usuarios',usuarios_Controller.indexPost);
+app.put('/usuarios/:id([0-9]+)',usuarios_Controller.itemPut);
+app.patch('/usuarios/:id([0-9]+)',usuarios_Controller.itemPatch);
+
 
 const calificaciones_Controller=require('./controllers/calificacionesController');
 app.use(express.json())
