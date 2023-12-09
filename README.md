@@ -62,12 +62,12 @@ consulta la [documentación detallada](./docs/README.md).
 
 Comando para construir la imagen desde dockerfile
 ```sh
-docker build -t demo-httpd:l14 .
+docker build -t demo-marketplace:l14 .
 ```
 
 Ejecutar la imagen construida:
 ```sh
-docker run -p 3000:80 demo-httpd:l14
+docker run -p 3000:80 demo-marketplace:l14
 ```
 
 #Usar el docker-compose
