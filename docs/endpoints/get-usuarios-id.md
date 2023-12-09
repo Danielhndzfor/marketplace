@@ -13,12 +13,10 @@ GET /usuarios/1
 ## Respuesta Exitosa (Codigo 200 OK)
 ```json
 {
-    "VentaID": 2,
-    "IDVendedor": 2,
-    "IDComprador": 3,
-    "ProductoID": 2,
-    "FechaVenta": "2023-01-02T00:00:00.000Z",
-    "MontoVenta": "29.99"
+    "UsuarioID": 1,
+    "Nombre": "Usuario1",
+    "CorreoElectronico": "usuario1@example.com",
+    "Contraseña": "password1"
 }
 ```
 

@@ -1,19 +1,18 @@
-# EndPoint: `GET /ventas/{id}`
+# EndPoint: `PATCH /ventas/{id}`
 
-Permite obtener informacion detallada sobre una venta especifico mediante su identificador unico
+Permite ingresar nuevos datos a una venta existente.
 
 ## Parametros de URL
-- `{id}` (obligatorio): Identificador unico de la venta que se desea recuperar.
+- `{id}` (obligatorio): Identificador unico de la venta que se desea actualizar.
 
 ## Ejemplo de Solicitud
 ```http
-GET /ventas/2
+PATCH /ventas/2
 ```
 
 ## Respuesta Exitosa (Codigo 200 OK)
 ```json
 {
-    "VentaID": 2,
     "IDVendedor": 2,
     "IDComprador": 3,
     "ProductoID": 2,
@@ -33,5 +32,4 @@ GET /ventas/2
     ```
 
 ## Notas Adicionales
-- Asegurate de incluir un ID válido en la solicitud para obtener la información
-  sobre una venta en específico.
+- Asegurate de incluir un ID válido en la solicitud para poder asignar los nuevos datos.
